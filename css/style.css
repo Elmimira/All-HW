@@ -1,0 +1,527 @@
+@import url("reset.css");
+
+body {
+    background-image: linear-gradient(to top, rgba(45, 15, 15, 0.53) 20%, #fbd4f0 50%, #15060699 80%);
+    overflow: hidden auto;
+    position: relative;
+}
+
+.header {
+    background: lightpink;
+}
+
+.container_header {
+    max-width: 1140px;
+    padding: 20px 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 20px 15px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 53px;
+}
+
+.wrapper {
+    width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    padding-bottom: 53px;
+}
+
+.first-ul {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    font-family: 'lobsterregular';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.first-ul > li {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.first-ul > li > a> :hover {
+    color: black;
+    fill: black;
+}
+
+.first-ul > li:hover .second-ul {
+    display: block;
+}
+
+.header_icon a {
+    display: block;
+    text-decoration: none;
+    color: deeppink;
+    padding: 10px 0 10px 50px;
+    position: relative;
+}
+
+.header_icon_right a {
+    display: block;
+    text-decoration: none;
+    color: deeppink;
+    padding: 10px 50px 10px 0;
+    position: relative;
+}
+
+.header_icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    fill: palevioletred;
+}
+
+.header_icon_right svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    fill: palevioletred;
+}
+
+.second-ul a {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.second-ul {
+    /*display: none;*/
+    padding: 5px 0 0;
+	position: absolute;
+	top: 100%;
+	left: -2000%;
+	z-index: 1;
+    transition: all 1s;
+    font-family: 'caveatregular';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.first-ul > li:hover .second-ul {
+    left: 0;
+}
+
+.second-ul > li:hover .third-ul {
+    right: 100%;
+    top: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+.second-ul > li {
+	background: lightpink;
+    position: relative;
+}
+
+/*.second-ul > li:hover .third-ul {
+    display: block;
+}*/
+
+.second-ul > li > a:hover {
+    color: black;
+}
+
+.third-ul {
+    opacity: 0;
+    padding: 0 5px;
+	position: absolute;
+	top: -1000%;
+	right: -1000%;
+	z-index: 0;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    font-family: 'henny_pennyregular';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.third-ul > li {
+	background: lightpink;
+}
+
+.third-ul > li > a:hover {
+    color: black;
+}
+
+.homepage {
+    height: calc(100vh - 53px - 90px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home_animation {
+    background: url("../images/2.png");
+    width: 327px;
+    height: 444px;
+    animation: play 2s steps(10) infinite;
+}
+
+@keyframes play {
+    100% {
+        background-position: -3270px;
+    }
+}
+
+.leaf-one h2 {
+    font-size: 50px;
+    font-family: 'henny_pennyregular';
+}
+
+.leaf-one p {
+    font-size: 30px;
+    font-family: 'henny_pennyregular';
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+}
+
+.footer_ul {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    background: lightpink;
+}
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    fill: palevioletred;
+}
+
+.footer-icon:hover {
+    fill: black;
+}
+
+.float {
+    float: left;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.outline {
+    outline: 1px solid gray;
+}
+
+.green {
+    width: 400px;
+    height: 400px;
+    background: green;
+}
+
+.orange {
+    width: 800px;
+    height: 400px;
+    background: orange;
+}
+
+.orange_float {
+    height: 200px;
+}
+
+.deepskyblue_float {
+    background: deepskyblue;
+    width: 400px;
+    height: 133px;
+}
+
+.deeppink_float {
+    width: 400px;
+    height: 400px;
+    background: deeppink;
+}
+
+.blue_float {
+    width: 800px;
+    height: 200px;
+    background: blue;
+}
+
+.violet_float {
+    width: 400px;
+    height: 200px;
+    background: violet;
+}
+
+.yellow_float {
+    width: 400px;
+    height: 100px;
+    background: yellow;
+}
+
+.wrapper p {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.box {
+    margin-top: 20px;
+    font-size: 0;
+}
+
+.child {
+    display: inline-block;
+    width: 400px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.child_card {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.child_card a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.child_card div > h2:hover {
+    color: pink;
+}
+
+.child_card a:hover {
+    color: pink;
+}
+
+.description {
+    text-align: justify;
+    overflow: hidden;
+    height: 150px;
+    margin: 10px;
+}
+
+.wrapper h1 {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 300;
+    background: rgba(29, 1, 1, 0.805);
+    color: white;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.child_card div > h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.child_card div > img {
+    width: 300px;
+    height: 200px;
+    box-shadow: -20px -7px 10px 1px #15060699;
+}
+
+.description p {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.description p+p {
+    margin-top: 10px;
+}
+
+.container div + div {
+    margin-top: 50px;
+}
+
+.gallery {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: -20px -7px 10px 1px #15060699;
+    border-radius: 18px;
+    }
+
+.gallery-text {
+    background: rgba(99, 45, 4, 0.816);
+    z-index: 1;
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    margin-top:-50px;
+    left: 0;
+    font-size: 20px;
+    color: rgb(251, 234, 255);
+    display: none;
+}
+
+.gallery:hover .gallery-text {
+	display: block;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.mondrian {
+    display: inline-table;
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.table_one {
+    background: rgb(151, 151, 151);
+}
+
+.table_two {
+    background: rgb(6, 58, 11);
+}
+
+.table_three {
+    background: rgb(0, 64, 255);
+}
+
+.table_four {
+    background: olive;
+}
+
+.table_five {
+    background: rgb(251, 199, 29);
+}
+
+.table_six {
+    background: rgba(27, 230, 0, 0.744);
+    }
+
+.color_pink {
+        background: pink;
+    }
+
+.color_darkmagenta {
+    background: darkmagenta;
+}
+
+.color_red {
+    background: red;
+}
+
+.color_lavender {
+    background: lavender;
+}
+
+.color_hotpink {
+    background: hotpink;
+}
+
+.color_coral {
+    background: coral;
+}
+
+.hover_box {
+    width: 300px;
+    position: fixed;
+    bottom: 0%;
+    right: 10%;
+    transform: translateY(calc(100% - 70px));
+    transition: all 1s ease-in;
+}
+
+.hover_box:hover {
+    transform: translateY(0%);
+    background-color: rgba(255, 182, 193, 0.73);
+}
+
+.hover_box:hover .hoverMe {
+    animation: none;
+}
+
+.hoverMe {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'caveatregular';
+    color: rgb(14, 1, 8);
+    transition: all 2s;
+    text-shadow: 2px 3px 2px rgb(249, 5, 180);
+    background-color: lightpink;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0%, 50%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 60%, 80% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 70%, 90% {
+        transform: translate(5px);
+    }
+}
+
+.hidden_menu {
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    flex-flow: wrap;
+    gap: 10px;
+    transform: rotate(45deg);
+}
+
+.hidden_menu a {
+    display: block;
+    border: 1px solid grey;
+    padding: 13px;
+    background-image: linear-gradient(white, grey);
+}
+
+.hidden_menu a:hover {
+    background-image: radial-gradient(rgb(203, 21, 115), grey);
+}
+
+.hidden_menu svg {
+    transform: rotate(-45deg);
+    transition: all 2s;
+}
+
+.hidden_menu svg:hover {
+    transform: rotateZ(315deg);
+}
+
+.hover-icon {
+    width: 40px;
+    height: 40px;
+}
